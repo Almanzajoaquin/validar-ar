@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "validar-ar"
+version = "0.1.0"
+description = "Valida y genera CUIT/CUIL, CBU y DNI argentinos. Sin dependencias."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["argentina", "cuit", "cuil", "cbu", "dni", "validacion", "afip", "arca"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+validar-ar = "validar_ar.cli:main"
+
+[tool.setuptools]
+packages = ["validar_ar"]
